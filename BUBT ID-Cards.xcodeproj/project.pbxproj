@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B62D07327DF8842005E63AE /* showIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07227DF8842005E63AE /* showIDVC.swift */; };
 		4B62D07527DFA977005E63AE /* cardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07427DFA977005E63AE /* cardData.swift */; };
+		4B62D07727DFC14A005E63AE /* JSONDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07627DFC14A005E63AE /* JSONDecode.swift */; };
 		4B66A63227DF7A0500A59D2E /* MySelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A63127DF7A0500A59D2E /* MySelfVC.swift */; };
 		4B66A63427DF7A2000A59D2E /* SaveCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */; };
 		4B979C4827DF827700778ED0 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B979C4727DF827700778ED0 /* constants.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4B62D07227DF8842005E63AE /* showIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showIDVC.swift; sourceTree = "<group>"; };
 		4B62D07427DFA977005E63AE /* cardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardData.swift; sourceTree = "<group>"; };
+		4B62D07627DFC14A005E63AE /* JSONDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecode.swift; sourceTree = "<group>"; };
 		4B66A63127DF7A0500A59D2E /* MySelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySelfVC.swift; sourceTree = "<group>"; };
 		4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardVC.swift; sourceTree = "<group>"; };
 		4B979C4727DF827700778ED0 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */,
 				4B62D07227DF8842005E63AE /* showIDVC.swift */,
 				4B62D07427DFA977005E63AE /* cardData.swift */,
+				4B62D07627DFC14A005E63AE /* JSONDecode.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				4B979C4827DF827700778ED0 /* constants.swift in Sources */,
 				4B62D07527DFA977005E63AE /* cardData.swift in Sources */,
 				4BED484D27DE45C200A1F0C3 /* AppDelegate.swift in Sources */,
+				4B62D07727DFC14A005E63AE /* JSONDecode.swift in Sources */,
 				4BED484F27DE45C200A1F0C3 /* SceneDelegate.swift in Sources */,
 				4BED485727DE45C200A1F0C3 /* BUBT_ID_Cards.xcdatamodeld in Sources */,
 			);

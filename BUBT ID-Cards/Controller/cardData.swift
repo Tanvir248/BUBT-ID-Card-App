@@ -38,9 +38,23 @@ struct cardManager {
         return
         }
         if let safeData = data {
-            let dataString = String(data: safeData, encoding: .utf8)
-        print(dataString!)
+         //   let dataString = String(data: safeData, encoding: .utf8)
+        //print(dataString!)
+          parseJSON(idCardData: safeData)
         }
         
     }
+    
+    func parseJSON(idCardData: Data){
+        let decoder = JSONDecoder()
+        do{
+            let gainData = try decoder.decode(cardData.self, from: idCardData)
+            //print(gainData.name)
+        }catch{
+            print(error)
+        }
+        
+    }
+    
 }
+
