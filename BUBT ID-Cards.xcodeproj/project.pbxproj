@@ -10,6 +10,7 @@
 		4B62D07327DF8842005E63AE /* showIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07227DF8842005E63AE /* showIDVC.swift */; };
 		4B62D07527DFA977005E63AE /* cardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07427DFA977005E63AE /* cardData.swift */; };
 		4B62D07727DFC14A005E63AE /* JSONDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07627DFC14A005E63AE /* JSONDecode.swift */; };
+		4B62D07B27DFC7E9005E63AE /* transferData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07A27DFC7E9005E63AE /* transferData.swift */; };
 		4B66A63227DF7A0500A59D2E /* MySelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A63127DF7A0500A59D2E /* MySelfVC.swift */; };
 		4B66A63427DF7A2000A59D2E /* SaveCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */; };
 		4B979C4827DF827700778ED0 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B979C4727DF827700778ED0 /* constants.swift */; };
@@ -26,6 +27,7 @@
 		4B62D07227DF8842005E63AE /* showIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showIDVC.swift; sourceTree = "<group>"; };
 		4B62D07427DFA977005E63AE /* cardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardData.swift; sourceTree = "<group>"; };
 		4B62D07627DFC14A005E63AE /* JSONDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecode.swift; sourceTree = "<group>"; };
+		4B62D07A27DFC7E9005E63AE /* transferData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferData.swift; sourceTree = "<group>"; };
 		4B66A63127DF7A0500A59D2E /* MySelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySelfVC.swift; sourceTree = "<group>"; };
 		4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardVC.swift; sourceTree = "<group>"; };
 		4B979C4727DF827700778ED0 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
@@ -51,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B62D07827DFC78B005E63AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BED485227DE45C200A1F0C3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B62D07927DFC79E005E63AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B62D07627DFC14A005E63AE /* JSONDecode.swift */,
+				4B62D07427DFA977005E63AE /* cardData.swift */,
+				4B62D07A27DFC7E9005E63AE /* transferData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4B66A63027DF79AD00A59D2E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +78,6 @@
 				4B66A63127DF7A0500A59D2E /* MySelfVC.swift */,
 				4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */,
 				4B62D07227DF8842005E63AE /* showIDVC.swift */,
-				4B62D07427DFA977005E63AE /* cardData.swift */,
-				4B62D07627DFC14A005E63AE /* JSONDecode.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -85,8 +103,9 @@
 			children = (
 				4BED484C27DE45C200A1F0C3 /* AppDelegate.swift */,
 				4BED484E27DE45C200A1F0C3 /* SceneDelegate.swift */,
+				4B62D07927DFC79E005E63AE /* Model */,
+				4B62D07827DFC78B005E63AE /* View */,
 				4B66A63027DF79AD00A59D2E /* Controller */,
-				4BED485227DE45C200A1F0C3 /* Main.storyboard */,
 				4B979C4727DF827700778ED0 /* constants.swift */,
 				4BED485827DE45C300A1F0C3 /* Assets.xcassets */,
 				4BED485A27DE45C300A1F0C3 /* LaunchScreen.storyboard */,
@@ -170,6 +189,7 @@
 				4B62D07327DF8842005E63AE /* showIDVC.swift in Sources */,
 				4B66A63227DF7A0500A59D2E /* MySelfVC.swift in Sources */,
 				4B66A63427DF7A2000A59D2E /* SaveCardVC.swift in Sources */,
+				4B62D07B27DFC7E9005E63AE /* transferData.swift in Sources */,
 				4BED485127DE45C200A1F0C3 /* ViewController.swift in Sources */,
 				4B979C4827DF827700778ED0 /* constants.swift in Sources */,
 				4B62D07527DFA977005E63AE /* cardData.swift in Sources */,

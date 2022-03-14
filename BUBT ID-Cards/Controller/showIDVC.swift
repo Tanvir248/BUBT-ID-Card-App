@@ -4,11 +4,12 @@
 //
 //  Created by Tanvir Rahman on 14.03.2022.
 //
-
+import Foundation
 import UIKit
 import WebKit
-class showIDVC: UIViewController {
-    var fetchedData = cardData()
+class showIDVC: UIViewController, TransferDataDelegate {
+    
+    
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet var WebPhoto : WKWebView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -18,15 +19,19 @@ class showIDVC: UIViewController {
     var photoId : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       // cardManager.delegate = self
         WebPhoto.load(URLRequest(url: (URL(string: "https://bubt.mrshoikot.com/photos/\(photoId).jpeg")!)))
         
-        bloodGroupLabel.text = ("Blood Group:\(fetchedData.blood)")
+        
         
     }
     
 
-    
+    func didUpdateIDCard(transfer: transferData){
+        bloodGroupLabel.text = ("Blood Group:\(transfer.blood)")
+        print(transfer.blood)
+        print(transfer.program)
+    }
 
 }
