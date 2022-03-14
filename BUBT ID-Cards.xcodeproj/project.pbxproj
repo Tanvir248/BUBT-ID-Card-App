@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B62D07327DF8842005E63AE /* showIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07227DF8842005E63AE /* showIDVC.swift */; };
+		4B62D07527DFA977005E63AE /* cardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D07427DFA977005E63AE /* cardData.swift */; };
+		4B66A63227DF7A0500A59D2E /* MySelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A63127DF7A0500A59D2E /* MySelfVC.swift */; };
+		4B66A63427DF7A2000A59D2E /* SaveCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */; };
+		4B979C4827DF827700778ED0 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B979C4727DF827700778ED0 /* constants.swift */; };
 		4BED484D27DE45C200A1F0C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED484C27DE45C200A1F0C3 /* AppDelegate.swift */; };
 		4BED484F27DE45C200A1F0C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED484E27DE45C200A1F0C3 /* SceneDelegate.swift */; };
 		4BED485127DE45C200A1F0C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED485027DE45C200A1F0C3 /* ViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B62D07227DF8842005E63AE /* showIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showIDVC.swift; sourceTree = "<group>"; };
+		4B62D07427DFA977005E63AE /* cardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardData.swift; sourceTree = "<group>"; };
+		4B66A63127DF7A0500A59D2E /* MySelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySelfVC.swift; sourceTree = "<group>"; };
+		4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardVC.swift; sourceTree = "<group>"; };
+		4B979C4727DF827700778ED0 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		4BED484927DE45C200A1F0C3 /* BUBT ID-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BUBT ID-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BED484C27DE45C200A1F0C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BED484E27DE45C200A1F0C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B66A63027DF79AD00A59D2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BED485027DE45C200A1F0C3 /* ViewController.swift */,
+				4B66A63127DF7A0500A59D2E /* MySelfVC.swift */,
+				4B66A63327DF7A2000A59D2E /* SaveCardVC.swift */,
+				4B62D07227DF8842005E63AE /* showIDVC.swift */,
+				4B62D07427DFA977005E63AE /* cardData.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4BED484027DE45C200A1F0C3 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +82,9 @@
 			children = (
 				4BED484C27DE45C200A1F0C3 /* AppDelegate.swift */,
 				4BED484E27DE45C200A1F0C3 /* SceneDelegate.swift */,
-				4BED485027DE45C200A1F0C3 /* ViewController.swift */,
+				4B66A63027DF79AD00A59D2E /* Controller */,
 				4BED485227DE45C200A1F0C3 /* Main.storyboard */,
+				4B979C4727DF827700778ED0 /* constants.swift */,
 				4BED485827DE45C300A1F0C3 /* Assets.xcassets */,
 				4BED485A27DE45C300A1F0C3 /* LaunchScreen.storyboard */,
 				4BED485D27DE45C300A1F0C3 /* Info.plist */,
@@ -141,7 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B62D07327DF8842005E63AE /* showIDVC.swift in Sources */,
+				4B66A63227DF7A0500A59D2E /* MySelfVC.swift in Sources */,
+				4B66A63427DF7A2000A59D2E /* SaveCardVC.swift in Sources */,
 				4BED485127DE45C200A1F0C3 /* ViewController.swift in Sources */,
+				4B979C4827DF827700778ED0 /* constants.swift in Sources */,
+				4B62D07527DFA977005E63AE /* cardData.swift in Sources */,
 				4BED484D27DE45C200A1F0C3 /* AppDelegate.swift in Sources */,
 				4BED484F27DE45C200A1F0C3 /* SceneDelegate.swift in Sources */,
 				4BED485727DE45C200A1F0C3 /* BUBT_ID_Cards.xcdatamodeld in Sources */,
