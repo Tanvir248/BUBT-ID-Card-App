@@ -16,22 +16,33 @@ class showIDVC: UIViewController, TransferDataDelegate {
     @IBOutlet weak var programLabel: UILabel!
     @IBOutlet weak var intakeLabel: UILabel!
     @IBOutlet weak var bloodGroupLabel: UILabel!
+    var apiManager = cardDataManager()
+    
     var photoId : String = ""
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        apiManager.delegate = self
         
-       // cardManager.delegate = self
         WebPhoto.load(URLRequest(url: (URL(string: "https://bubt.mrshoikot.com/photos/\(photoId).jpeg")!)))
         
         
-        
+        apiManager.fetchCardData(idNo: photoId)
+                
     }
     
-
-    func didUpdateIDCard(transfer: transferData){
-        bloodGroupLabel.text = ("Blood Group:\(transfer.blood)")
-        print(transfer.blood)
-        print(transfer.program)
+    func didUpdateIDCard(transfer : transferData) {
+        DispatchQueue.main.async {
+            self.idLabel.text = "ID- \(transfer.id)"
+            self.nameLabel.text = transfer.name
+            self.programLabel.text = transfer.program
+            self.bloodGroupLabel.text = "Blood Group:\(transfer.blood)"
+            self.intakeLabel.text = transfer.intake
+        }
+        
     }
+
+   
 
 }

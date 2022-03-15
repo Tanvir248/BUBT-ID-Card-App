@@ -12,7 +12,7 @@ protocol TransferDataDelegate {
     func didUpdateIDCard(transfer : transferData)
 }
 
-struct cardManager {
+struct cardDataManager {
     
     let cardUrl = "https://bubt.mrshoikot.com/api.php?id="
     
